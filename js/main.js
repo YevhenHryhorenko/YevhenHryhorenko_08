@@ -1,0 +1,102 @@
+const comma = ','
+const dot = '.'
+
+document.write(`First task <br>`)
+
+for (let index = 10; index < 21; index++) {
+  document.write(`${index}`)
+  index != 20 ? document.write(`${comma} `) : document.write(`${dot}`)
+}
+
+document.write(`<br><br>`)
+
+document.write(`Second task <br>`)
+
+for (let index = 10; index < 21; index++) {
+  document.write(`${Math.pow(index, 2)}`)
+  index != 20 ? document.write(`${comma} `) : document.write(`${dot}`)
+}
+
+document.write(`<br><br>`)
+
+document.write(`Third task <br>`)
+
+const number = 7;
+let arr = [];
+let result;
+
+document.write('<table style="border: 2px solid blue; background-color: yellow">');
+for (let i = 1; i < 11; i++) {
+  arr[i] = [];
+  for (let j = 2; j < number; j++) {
+    arr[i][j] = i * j;
+    result = i * number;
+
+  }
+  document.write(`<tr> <td style="border: 2px solid blue; padding: 5px">${i} * ${number} </td> <td style="border: 2px solid blue; padding: 5px">${result}</td> </tr>`);
+}
+document.write('</table>');
+
+document.write(`<br><br>`)
+
+document.write(`Fourth task <br>`)
+
+let res = 0
+
+for (let index = 1; index < 16; index++) {
+  res = index + res
+}
+
+document.write(`${res}`)
+
+document.write(`<br><br>`)
+
+document.write(`Fifth task <br>`)
+
+// res = 1
+// let flag
+
+// for (let index = 15; index < 36; index++) {
+//     flag = index * (index + 1)
+//     console.log(`${res}\n`);
+//     res = index * flag
+// }
+
+// document.write(`${res}`)
+
+document.write(`<br><br>`)
+
+document.write(`Sixth task <br>`)
+
+res = 0
+
+for (let index = 1; index < 501; index++) {
+  res = index + res
+}
+
+document.write(`${res / 500}`)
+
+document.write(`<br><br>`)
+
+document.write(`Seventh task <br>`)
+
+res = 0
+
+for (let index = 30; index < 81; index++) {
+  if (index % 2 == 0) {
+    res = index + res
+  }
+}
+
+document.write(`${res}`)
+
+document.write(`<br><br>`)
+
+document.write(`Eighth task <br>`)
+
+for (let index = 100; index < 201; index++) {
+  if (index % 3 == 0) {
+    document.write(`${index} `)
+  }
+}
+
